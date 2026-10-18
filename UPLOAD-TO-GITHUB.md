@@ -29,11 +29,30 @@ git pull origin main --rebase   # if GitHub already has a README
 git push -u origin main
 ```
 
-## After upload
+## Deploy on Streamlit Community Cloud
+
+1. Push this repo to GitHub (must include **`app.py`** and **`requirements.txt`** at the repo root).
+2. Go to [share.streamlit.io](https://share.streamlit.io) → **New app**.
+3. Pick your repo **`sosullivan611-lab/steve-sales-reading`** and branch **`main`**.
+4. Set **Main file path** to: **`app.py`**
+5. Deploy.
+
+Alternative main file: **`streamlit_app.py`** (same app).
+
+## After upload (local)
+
+**Streamlit:**
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+**Next.js (original UI):**
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open http://127.0.0.1:43127 locally.
+Open http://127.0.0.1:43127 for Next.js.
