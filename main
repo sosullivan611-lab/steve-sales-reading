@@ -1,0 +1,6 @@
+cd steve-sales-reading   # or wherever the project lives
+
+# If this folder isn't linked to GitHub yet:
+git remote add github https://github.com/sosullivan611-lab/steve-sales-reading.git
+
+git push -u github main
